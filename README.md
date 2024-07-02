@@ -6,3 +6,18 @@
 
 1. Перенесите классы и зависимости из предыдущей задачи.
 2. Создайте приложение с front частью на Bootstrap 4.
+
+### SQL request при запуске приложения: 
+
+INSERT INTO mydb.users (id, age, email, first_name, last_name, password, username)
+VALUES (1, 18, 'user@mail.ru', 'user', 'user', '$2a$12$oOatp7uvpqnrRJBo7.ZnCeZTRe7nSd/40sCUDyg/ln/RNMlwrX/SK', 'user');
+
+INSERT INTO mydb.roles (id, role_name)
+VALUES (1, 'ROLE_ADMIN');
+
+INSERT INTO mydb.roles (id, role_name)
+VALUES (2, 'ROLE_USER');
+
+INSERT INTO mydb.users_roles (user_id, role_id)
+VALUES (1, 1);
+
